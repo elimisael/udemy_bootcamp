@@ -8,10 +8,12 @@ select
     o.OrderCostPrice,
     o.OrderSellingPrice,
     -- from customer
+    c.CustomerID,
     c.CustomerName,
     c.Segment,
     c.Country,
     -- from product
+    p.ProductID,
     p.Category,
     p.ProductName,
     p.SubCategory
