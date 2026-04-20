@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: raw_customers
+    columns:
+      - name: CustomerID
+        tests:
+          - unique
+          - not_null
+          
