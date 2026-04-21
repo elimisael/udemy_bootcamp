@@ -16,7 +16,8 @@ select
     p.ProductID,
     p.Category,
     p.ProductName,
-    p.SubCategory
+    p.SubCategory,
+    {{ markup() }} as MarkUp
 from {{ ref('raw_orders') }} as o
     left join {{ ref('raw_customers') }} as c
         on o.CustomerID = c.CustomerID
