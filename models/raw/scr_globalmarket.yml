@@ -2,13 +2,16 @@ version: 2
 
 sources:
   - name: GlobalMarket
+    description: a clone of the Databricks Database
     database: udemy_bootcamp
     schema: raw
     tables:
       - name: customers
       - name: orders
+        description: Raw orders table
         columns:
           - name: OrderID
+            description: primiry key for orders
             tests:
               - unique
               - not_null              
