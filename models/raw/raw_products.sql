@@ -5,4 +5,4 @@
 }}
 
 select *
-from raw.product
+from {{ source('GlobalMarket', 'product') }}

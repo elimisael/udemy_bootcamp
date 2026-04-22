@@ -5,4 +5,4 @@
 }}
 
 select *
-from udemy_bootcamp.raw.orders
+from {{ source('GlobalMarket', 'orders') }}
